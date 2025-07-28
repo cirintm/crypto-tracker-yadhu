@@ -24,3 +24,18 @@ table {
   margin-top: 20px;
 }
 
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  color: #00ffcc;
+}
+
+tr:hover {
+  background-color: #333;
+}
+
+
