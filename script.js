@@ -2,27 +2,23 @@ const API_URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&
 
 async function fetchData() {
   try {
-  const response = await fetch(API_URL);
+    const response = await fetch(API_URL);
     const data = await response.json();
     const tbody = document.querySelector("#cryptoTable tbody");
-   data.forEach((coin, index) => {
+    data.forEach((coin, index) => {
       const row = document.createElement("tr");
       row.innerHTML = `
         <td>${index + 1}</td>
         <td>${coin.name}</td>
-                <td>${coin.symbol.toUpperCase()}</td>
+        <td>${coin.symbol.toUpperCase()}</td>
         <td>$${coin.current_price.toLocaleString()}</td>
         <td>$${coin.market_cap.toLocaleString()}</td>
-         `;
+      `;
       tbody.appendChild(row);
     });
   } catch (error) {
     console.error("Error fetching crypto data:", error);
   }
-}  
- 
-
-     
+}
 
 fetchData();
-
