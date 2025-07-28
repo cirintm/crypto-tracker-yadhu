@@ -2,3 +2,6 @@ const API_URL = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&
 
 async function fetchData() {
   try {
+  const response = await fetch(API_URL);
+    const data = await response.json();
+    const tbody = document.querySelector("#cryptoTable tbody");
