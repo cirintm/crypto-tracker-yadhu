@@ -10,3 +10,17 @@ body {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #00ffcc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #222;
+  margin-top: 20px;
+}
+
