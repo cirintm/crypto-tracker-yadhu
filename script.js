@@ -13,3 +13,16 @@ async function fetchData() {
                 <td>${coin.symbol.toUpperCase()}</td>
         <td>$${coin.current_price.toLocaleString()}</td>
         <td>$${coin.market_cap.toLocaleString()}</td>
+         `;
+      tbody.appendChild(row);
+    });
+  } catch (error) {
+    console.error("Error fetching crypto data:", error);
+  }
+}  
+ 
+
+     
+
+fetchData();
+
