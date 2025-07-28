@@ -13,6 +13,6 @@ A simple web app that displays real-time prices for the top 10 cryptocurrencies 
 1. Download or clone the repo
 2. Open `index.html` in your browser
 
-## API Used
+
 
 [CoinGecko Free API](https://www.coingecko.com/en/api)
