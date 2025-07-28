@@ -5,3 +5,8 @@ async function fetchData() {
   const response = await fetch(API_URL);
     const data = await response.json();
     const tbody = document.querySelector("#cryptoTable tbody");
+   data.forEach((coin, index) => {
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${index + 1}</td>
+        <td>${coin.name}</td>
