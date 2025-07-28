@@ -10,3 +10,6 @@ async function fetchData() {
       row.innerHTML = `
         <td>${index + 1}</td>
         <td>${coin.name}</td>
+                <td>${coin.symbol.toUpperCase()}</td>
+        <td>$${coin.current_price.toLocaleString()}</td>
+        <td>$${coin.market_cap.toLocaleString()}</td>
